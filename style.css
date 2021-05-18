@@ -1,0 +1,24 @@
+.btc-price-container{
+    margin: 3em;
+    background-image: url(./assets/btc_logo\ .png);
+    background-repeat: space;
+}
+.btc-ticker{
+    margin-top: 2.5rem;
+    text-align: center;
+}
+.top-nav-row a{
+    margin: 10px;
+    font-size: 0.8rem;
+}
+.hero-buttons{
+    margin: .2rem;
+}
+.hero-img{
+    border-radius: 1rem;
+}
+.nav-buttons button{
+    font-size: 0.7rem;
+    padding: 0em;
+    margin: 0.25em 0em;
+}

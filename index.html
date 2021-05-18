@@ -11,68 +11,116 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+    <!-- my css link -->
+    <link rel="stylesheet" href="style.css" />
     <title>Banking Home</title>
   </head>
   <body>
     <!-- navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid ms-5">
-          <a class="navbar-brand" href="#">Crypto-Bank</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid ms-5">
+        <a class="navbar-brand" href="#"><img src="./assets/crypto-bank-logo.svg" alt="crypto-bank-logo"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-md d-flex flex-column align-items-end me-5">
+        <div class="row top-nav-row">
+          <div class="col">
+            <a href="http://">Locations</a>
+            <a href="http://">About</a>
+            <a href="http://">Open an Account</a>
+            <a href="http://">En Español</a>
           </div>
         </div>
-        <div class="container-md d-flex flex-column align-items-end">
-            <div class="row">
-                <div class="col-md-3"><a href="http://">Locations</a></div>
-                <div class="col-md-3"><a href="http://">About</a></div>
-                <div class="col-md-3"><a href="http://">Open an Account</a></div>
-                <div class="col-md-3"><button>En Español</button></div>
-            </div>
-            <div class="row">
-                <button>HELP</button>
-                <button>SEARCH</button>
-            </div>
+        <div class="row nav-buttons">
+          <button type="button" class="btn btn-outline-danger">HELP</button>
+          <button type="button" class="btn btn-outline-success">SEARCH</button>
         </div>
-      </nav>
+      </div>
+    </nav>
     <!-- hero section -->
-    <div class="container">
-        <div class="container">
-            <div class="row">
-                <h3>Crypto-Bank</h3>
-                <h1>eCrypt Account®</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ea quas aspernatur possimus, harum veritatis.</p>
-                <button>Open Now</button>
-                <button>Make an Appointment</button>
-                <a href="http://">View All Checking Accounts</a>
-            </div>
+    <div class="container my-5">
+      <div class="row hero-text">
+        <div class="col btc-price-container">
+          <p class="btc-ticker"></p>
         </div>
-        <div class="container">
-            <img src="https://via.placeholder.com/784x523" class="img-fluid" alt="Responsive image">
+        <div class="col m-2">
+          <h3 class="fw-light">Crypto-Bank</h3>
+          <h1 class="fw-bold">eCrypt Account®</h1>
+          <p class="fw-light">
+            Meet the all new eCrypt Account® from Crypto-Bank. Welcome to the future.
+          </p>
+          <div class="row hero-buttons">
+            <button type="button" class="btn btn-outline-success mb-2">
+              Open Now
+            </button>
+            <button type="button" class="btn btn-outline-success mb-2">
+              Make an Appointment
+            </button>
+          </div>
+          <a href="http://">View All Checking Accounts</a>
         </div>
+      </div>
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-4 my-auto">
+            <h1 class="fs-1 fw-light px-2">
+              Invest Better, even while on the go. Mobile support that matches your pace every step of the way.
+            </h1>
+          </div>
+          <div class="col-8">
+            <img
+              src="./assets/hero-img 1.jpg"
+              class="img-fluid hero-img"
+              alt="Responsive image"
+            />
+          </div>
+        </div>
+      </div>
     </div>
     <!-- bootstrap script tag -->
     <script
@@ -80,5 +128,35 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      const auth =
+        "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik5EVXhNRGhHT0VReE56STVOelJCTTBJM1FrUTVOa0l4TWtRd1FrSTJSalJFTVRaR1F6QTBOZyJ9.eyJpc3MiOiJodHRwczovL2F1dGguYnJhdmVuZXdjb2luLmNvbS8iLCJzdWIiOiJvQ2RRb1pvSTk2RVJFOUhZM3NRN0ptYkFDZkJmNTVSWUBjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly9hcGkuYnJhdmVuZXdjb2luLmNvbSIsImlhdCI6MTYyMTI3MzAxMiwiZXhwIjoxNjIxMzU5NDEyLCJhenAiOiJvQ2RRb1pvSTk2RVJFOUhZM3NRN0ptYkFDZkJmNTVSWSIsInNjb3BlIjoicmVhZDppbmRleC10aWNrZXIgcmVhZDpyYW5raW5nIHJlYWQ6bXdhIHJlYWQ6Z3dhIHJlYWQ6YWdncmVnYXRlcyByZWFkOm1hcmtldCByZWFkOmFzc2V0IHJlYWQ6b2hsY3YgcmVhZDptYXJrZXQtY2FwIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIn0.BzeAxrSjdEVEEP399ZapTurvMLC5F4L6i0MKgq0i1z1AXrfoK9cycdQLX3Houxp64nq0rMaiOhyrQ4kj3mX7wHZUUXFWbcYTsfv77rIlbs_d1jaYre0YN-daDofkBCgMNdgpEST2r9gTdMclGezIPHZHTZBwhf1GgoXJauH4q-4qkJi1qib15OHlO2_PQlpuc459-GFHB1zGYCyQnPcYsJgTUd8XZAj-4Ea13dTnyRLsp3N7jo0m4aqyYUQHbTnOWEDSOmDB11TUm7hgpOgJ8ZT-o2OtrrojJ2qm-jwp0UV5D53Hie2tSHM_wg0VoBLnwUMgV_mLLKad0p3CIgVJbg";
+
+      const settings = {
+        async: true,
+        crossDomain: true,
+        url:
+          "https://bravenewcoin.p.rapidapi.com/market-cap?assetId=f1ff77b6-3ab4-4719-9ded-2fc7e71cff1f",
+        method: "GET",
+        headers: {
+          authorization: `${auth}`,
+          "x-rapidapi-key":
+            "fc59749277msh5739753a05bb4c3p1fe10cjsn564de6700695",
+          "x-rapidapi-host": "bravenewcoin.p.rapidapi.com",
+        },
+      };
+
+      $.ajax(settings).done(function (res) {
+        const currentPrice = res.content[0].price;
+        const val = currentPrice.toFixed(2);
+
+        $(document).ready(function () {
+          $(".btc-price-container p").append(
+            `<h1>BTC - $${val}</h1><p>Current Bitcoin Price in USD</p>`
+          );
+        });
+      });
+    </script>
   </body>
 </html>
